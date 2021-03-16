@@ -1,0 +1,54 @@
+{
+  "name": "CLSR"
+  , "suffix": ""
+  , "model": "srragan"
+  , "scale": 4
+  , "gpu_ids": [0]
+
+  , "datasets": {
+
+   "test_1": {
+      "name": "set14"
+      ,"mode": "LRHR"
+      ,"dataroot_HR": "../test_datasets/Set14"
+      ,"dataroot_LR": "../test_datasets/Set14_x4"
+    },
+
+    "test_2": {
+      "name": "PIRM"
+      ,"mode": "LRHR"
+      ,"dataroot_HR": "../test_datasets/PIRM/Original"
+      ,"dataroot_LR": "../test_datasets/PIRM/4x_downsampled"
+    },
+
+     "test_3": {
+      "name": "urban100"
+      ,"mode": "LRHR"
+      ,"dataroot_HR": "../test_datasets/urban100"
+      ,"dataroot_LR": "../test_datasets/urban100_x4"
+    },
+      "test_4": {
+      "name": "BSD100"
+      , "mode": "LRHR"
+      ,"dataroot_HR": "../test_datasets/BSDS100"
+      ,"dataroot_LR": "../test_datasets/BSDS100_x4"
+    }
+  }
+
+  , "path": {
+    "root": "../"
+     ,"pretrain_model_G": "../pre_train_models/CLSR.pth"
+  }
+
+   , "network_G": {
+    "which_model_G": "RRDB_net" // RRDB_net | sr_resnet
+    , "norm_type": null
+    , "mode": "CNA"
+    , "nf": 64
+    , "nb": 23
+    , "in_nc": 3
+    , "out_nc": 3
+    , "gc": 32
+    , "group": 1
+  }
+}

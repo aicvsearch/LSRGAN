@@ -22,7 +22,7 @@ the GAN architecture as a coupling component.
 1. Clone github repo.
 
 ```
-git clone https://github.com/Kanbo0409/LSRGAN.git
+git clone https://github.com/aicvsearch/LSRGAN.git
 cd LSRGAN
 
 ```

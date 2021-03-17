@@ -26,7 +26,7 @@ git clone https://github.com/aicvsearch/LSRGAN.git
 cd LSRGAN
 
 ```
-2. Download pretrained models and testing datasets from [Google Drive](https://drive.google.com/file/d/1NctXfRmeVmJxAHvV3o-CcLAI9nQSmAaB/view). Place the models in ./pre_train_models and
+2. Download pretrained models and testing datasets from [Google Drive](https://drive.google.com/file/d/1GRS0_D9b0rm6Cisc8RRSZY7k3ESi0BdE/view?usp=sharing). Place the models in ./pre_train_models and
 the testing datasets in ./test_datasets. We provide four models: LSR, CLSR, CESR and ESR. ESR is downloaded from  https://github.com/xinntao/ESRGAN.
 We also provide Set14, PIRM, Urban100, and BSD100.
 

@@ -39,7 +39,7 @@ sh run_test.sh
 
 ```
 
-4. The results are in ./Results folder.
+4. The results are save in ./Results folder.
 
 # Test models Without Ground Truth
 without ground truth, only SR image will be generated
@@ -61,6 +61,7 @@ cd codes
 sh run_test.sh
 
 ```
+4. The results are save in ./Results folder.
 
 
 ## Quantitative Results

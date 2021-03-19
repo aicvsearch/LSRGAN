@@ -18,7 +18,9 @@ the GAN architecture as a coupling component.
 - lmdb==1.1.1
 - scikit_image==0.17.2
 
-# Test models
+# Test models With Ground Truth
+with ground truth, psnr, ssim will be calculated
+
 1. Clone github repo.
 
 ```
@@ -38,6 +40,28 @@ sh run_test.sh
 ```
 
 4. The results are in ./Results folder.
+
+# Test models Without Ground Truth
+without ground truth, only SR image will be generated
+
+1. open ./test/*.json file
+2. set dataset mode as "LR" and set image fold path to dataroot_LR
+```
+for example
+ "test_1": {
+      "name": "dataset's name"
+      ,"mode": "LR"
+      ,"dataroot_LR": "dataset path"
+    }
+
+```
+3. run run_test.sh
+```
+cd codes
+sh run_test.sh
+
+```
+
 
 ## Quantitative Results
 <p align="center">
